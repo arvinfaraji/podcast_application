@@ -17,10 +17,24 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Scaffold(
           body: Column(
             children: [
-              Row(
-                children: [
-                  
-                ],
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // setting icon 
+                    Icon(Icons.settings, size: 24, color: Colors.black,),
+                
+                    // search & notification icons row
+                    Row(
+                      spacing: 10,
+                      children: [
+                        Icon(Icons.search),
+                        Icon(Icons.notifications_active),
+                      ],
+                    )
+                  ],
+                ),
               )
             ],
           ),
