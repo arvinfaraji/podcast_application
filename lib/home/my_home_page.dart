@@ -143,10 +143,10 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
                             margin: EdgeInsets.only(bottom: 20),
                             child: TabBar(
                               indicatorPadding: EdgeInsetsGeometry.all(8),
-  indicatorSize: TabBarIndicatorSize.label,
-  labelPadding: EdgeInsets.only(right: 10),
-  controller: _tabController,
-  isScrollable: true,
+                              indicatorSize: TabBarIndicatorSize.label,
+                              labelPadding: EdgeInsets.only(right: 10),
+                              controller: _tabController,
+                              isScrollable: true,
                               tabs: [
                                 AppTabs(color: AppColor.menu1Color, text: 'Home'),
                                 AppTabs(color: AppColor.menu2Color, text: 'Popular'),
